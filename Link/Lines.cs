@@ -17,7 +17,6 @@ namespace Link
             _Points = p;
         }
         private bool _IsLink;
-
         public bool IsLink
         {
             get { return _IsLink; }
