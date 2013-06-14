@@ -1,8 +1,0 @@
-c:\users\beiluo\documents\visual studio 2010\Projects\Link\Link\bin\Debug\Link.exe
-c:\users\beiluo\documents\visual studio 2010\Projects\Link\Link\bin\Debug\Link.pdb
-c:\users\beiluo\documents\visual studio 2010\Projects\Link\Link\obj\x86\Debug\ResolveAssemblyReference.cache
-c:\users\beiluo\documents\visual studio 2010\Projects\Link\Link\obj\x86\Debug\Link.Properties.Resources.resources
-c:\users\beiluo\documents\visual studio 2010\Projects\Link\Link\obj\x86\Debug\GenerateResource.read.1.tlog
-c:\users\beiluo\documents\visual studio 2010\Projects\Link\Link\obj\x86\Debug\GenerateResource.write.1.tlog
-c:\users\beiluo\documents\visual studio 2010\Projects\Link\Link\obj\x86\Debug\Link.exe
-c:\users\beiluo\documents\visual studio 2010\Projects\Link\Link\obj\x86\Debug\Link.pdb
