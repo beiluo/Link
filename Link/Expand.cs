@@ -18,12 +18,12 @@ namespace Link
 
         public static int[] Link(this int[] curr, int[] next)
         {
-            int index = curr.Length;
+            var cur = curr.ToList();
             for (int i = 0; i < next.Length; i++)
             {
-                curr[index] = next[i];
+                cur.Add(next[i]);
             }
-            return curr;
+            return cur.ToArray();
         }
 
         public static int[] Sort(this int[] curr)

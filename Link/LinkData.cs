@@ -9,11 +9,13 @@ namespace Link
     {
         public int[][] buildmatrix(int x, int y)
         {
-            int[][] res = new int[][] { };
-            int[] arr = new int[] { };
+            int key = (int)(x * y / 2);
+            int[][] res = new int[][]{};
+            int[] arr = new int[key];
+            Random r = new Random(10);
             for (var i = 0; i < x * y / 2; i++)
             {
-                arr[i] = i + 1;
+                arr[i] = r.Next(1, 10);
             }
             for (var i = 0; i < (int)arr.Length / 2; i++)
             {
