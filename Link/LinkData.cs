@@ -7,39 +7,42 @@ namespace Link
 {
     class LinkData
     {
-        public int[][] buildmatrix(int x, int y)
+        public List<List<int>> buildmatrix(int x, int y)
         {
             int key = (int)(x * y / 2);
-            int[][] res = new int[][]{};
-            int[] arr = new int[key];
+            List<List<int>> res = new List<List<int>>();
+            List<int> arr = new List<int>();
             Random r = new Random(10);
             for (var i = 0; i < x * y / 2; i++)
             {
-                arr[i] = r.Next(1, 10);
+                arr.Add(r.Next(1, 10));
             }
-            for (var i = 0; i < (int)arr.Length / 2; i++)
+            for (var i = 0; i < (int)arr.Count / 2; i++)
             {
-                arr[arr.Length - 1 - i] = arr[i];
+                arr[arr.Count - 1 - i] = arr[i];
             }
-            arr = arr.Link(arr);
+            arr = arr.Concat(arr).ToList();
+            int k = 0;
             for (var i = 0; i < x + 2; i++)
             {
-                res[i] = arr;
+                var m = new List<int>();
                 for (var j = 0; j < y + 2; j++)
                 {
                     if (i == 0 || i == x + 1)
                     {
-                        res[i][j] = 0;
+                        m.Add(0);
                     }
                     else if (j == 0 || j == y + 1)
                     {
-                        res[i][j] = 0;
+                        m.Add(0);
                     }
                     else
                     {
-                        res[i][j] = arr.pop();
+                        m.Add(arr[k]);
+                        k++;
                     }
                 }
+                res.Add(m);
             }
             return res;
         }
